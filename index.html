@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<title>
+				 החברה של יד גיורא 
+			</title>
+			<link rel = "shortcut icon" type = "image/x-icon"  href = "photos/Adobe_20200417_011911.png"/>
+			<link rel = "stylesheet" href = "css/style.css" type = "text/css"/>
+		</head>
+		
+		<body>
+			<div id = "head">
+				<h1 class = "headline" ><a href = "index.html" style="color:white;" >החברה של יד גיורא</a></h1>
+			</div>
+			
+			<div id = "main">
+				<h2>דף הבית</h2>
+				<p style = "text-align: center;">
+					הגעתם לדף הבית של החברה הכי גברים בהרצליה בפרט ובארץ בכלל 
+				</p>
+				<button class="leftButton" style = "float: right;" onclick="plusDivs(-1)">&#10094;</button>
+				<button class="rightButton" style = "float: left;" onclick="plusDivs(1)">&#10095;</button>
+				<P style = "text-align: center;">
+					בלחיצה פשוטה על התפריט מימין תוכלו לקבל מידע אודות כל אחד מהחבורה האגדית
+				</P>
+				<img class="mySlides" style="width:100%" src="https://scontent.fsdv2-1.fna.fbcdn.net/v/t31.0-0/p640x640/15129035_1337642079582015_2151005620220770605_o.jpg?_nc_cat=105&_nc_sid=e007fa&_nc_ohc=KU7qsPo6ufoAX-CJ-0s&_nc_ht=scontent.fsdv2-1.fna&_nc_tp=6&oh=7c724a4a4646e402f0da98ec009da131&oe=5EBF51E1">
+				<img class="mySlides" style="width:100%" src="https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.0-9/1798096_814557305239891_2098744189_n.jpg?_nc_cat=102&_nc_sid=43edb5&_nc_ohc=nnNxi0mkaDIAX-KqyZH&_nc_ht=scontent.fsdv2-1.fna&oh=7d5ec4c7e4efeb28f90bf0101b032935&oe=5EC1DBFE">
+				<img class="mySlides" style="width:100%" src="https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.0-9/942936_568286903191838_1609944482_n.jpg?_nc_cat=106&_nc_sid=43edb5&_nc_ohc=5wI6eO-fZbcAX_Ma-5p&_nc_ht=scontent.fsdv2-1.fna&oh=778739cc5067d3211c2aac039b8d364f&oe=5EC0659C">
+				<img class="mySlides" style="width:100%" src="https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.0-9/576827_548845161802679_1406462242_n.jpg?_nc_cat=106&_nc_sid=43edb5&_nc_ohc=O1YZUBkbrsgAX8OyZ70&_nc_ht=scontent.fsdv2-1.fna&oh=502255990229ef616cc5e6af126c398a&oe=5EC038F9">
+				<img class="mySlides" style="width:100%" src="https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.0-9/205228_544875558867289_613824044_n.jpg?_nc_cat=110&_nc_sid=05277f&_nc_ohc=G24_FEZUgVcAX9aeoS7&_nc_ht=scontent.fsdv2-1.fna&oh=c0fcdc992f39a06d272722aa3f07d6a8&oe=5EBE9A70">
+				<img class="mySlides" style="width:100%" src="https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.0-9/549990_570914499586483_513315083_n.jpg?_nc_cat=105&_nc_sid=43edb5&_nc_ohc=iLu1wcoCIaQAX8hfELu&_nc_ht=scontent.fsdv2-1.fna&oh=83adc7a7a34014d6c0c6d2133dd90cce&oe=5EBF5A62">
+				<script>
+					var slideIndex = 1;
+					showPics(slideIndex);
+					
+					function plusDivs(n) 
+					{
+					  showPics(slideIndex += n);
+					}
+					
+					
+					function showPics(place) 
+					{
+					  var i;
+					  var x = document.getElementsByClassName("mySlides");
+					  if (place > x.length) {slideIndex = 1}
+					  if (place < 1) {slideIndex = x.length}
+					  for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";  
+					  }
+					  x[slideIndex-1].style.display = "block"; 
+					  
+					}
+					
+				</script>
+			</div>
+			
+			<div id = "menu" style="color:black;">
+			
+				<ul style = "color:black;" class = "list" >
+					<li> <a href = "index.html" >דף הבית</a> </li>
+					<li> <a href = "aviel.html" >אביאל קונטנטה</a> </li>
+					<li> <a href = "avishai.html" >אבישי דסטה </a></li>
+					<li> <a href = "ord.html" >אור דהרי </a></li>
+					<li> <a href = "ors.html">אור סלבטקו </a></li>
+					<li> <a href = "oren.html" >אורן סביץ </a></li>
+					<li> <a href = "itamar.html" >איתמר בלאו</a> </li>
+					<li> <a href = "gabi.html" >גבי גרשברג</a> </li>
+					<li> <a href = "gidi.html" >גידי זיו</a> </li>
+					<li> <a href = "david.html" >דויד צוקרמן</a> </li>
+					<li> <a href = "dolev.html" >דולב יפרח </a> </li>
+					<li> <a href = "dor.html" >דור פרחי</a> </li>
+					<li> <a href = "daniel.html" >דניאל שגיב</a> </li>
+					<li> <a href = "yuval.html" >יובל בורוכוב</a> </li>
+					<li> <a href = "stav.html" >סתיו זרד</a></li>
+					<li> <a href = "oded.html" >עודד שאוליאן</a></li>
+					<li> <a href = "sagi.html" >שגיא עברוני</a> </li>
+					<li> <a href = "shachar.html" >שחר וילנסקי </a></li>
+					<li> <a href = "shir.html" >שיר אמזלג </a></li>
+					<li> <a href = "tom.html" >תום גילון</a> </li>
+					
+				</ul>
+			</div>
+		</body>
+</html>
