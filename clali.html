@@ -120,7 +120,7 @@
 				var dolevBD = new Date(1999,0,16);
 				var bds = [davidBD , danielBD , avishaiBD , avielBD , yuvalBD , tomBD , stavBD , shirBD , shacharBD , sagiBD , orsBD , ordBD , orenBD , odedBD , itamarBD , gidiBD , gabiBD , dorBD , dolevBD];
 				var names = ["דויד" ,"דניאל","אבישי","אביאל","בורוכוב","תום","סתיו","שיר","וילנסקי","שגיא","סלבטקו","אור דהרי","אורן","עודד","בלאו","גידי","גבי","פרחי","דולב"];
-				var heads = ["photos/davidhead.png" , "photos/danelhead.png" , "photos/avishaihead.png" , "photos/avielhead.png" , "photos/yuvalhead.png" , "photos/tomhead.png" , "photos/stavhead.png" , "photos/shirhead.png" , "photos/shacharhead.png" , "photos/sagihead.png" , "photos/orshead.png" , "photos/ordhead.png" , "photos/orenhead.png" , "photos/odedhead.png" , "photos/itamarhead.png" , "photos/gidihead.png" , "photos/gabihead.png" , "photos/dorhead.png" , "photos/dolevhead.png"];
+				var heads = ["photos/davidhead.png" , "photos/danielhead.png" , "photos/avishaihead.png" , "photos/avielhead.png" , "photos/yuvalhead.png" , "photos/tomhead.png" , "photos/stavhead.png" , "photos/shirhead.png" , "photos/shacharhead.png" , "photos/sagihead.png" , "photos/orshead.png" , "photos/ordhead.png" , "photos/orenhead.png" , "photos/odedhead.png" , "photos/itamarhead.png" , "photos/gidihead.png" , "photos/gabihead.png" , "photos/dorhead.png" , "photos/dolevhead.png"];
 
 				
 				nextbirthday(bds , names , heads);
@@ -178,22 +178,25 @@
 				{
 					
 					var minnum = 0;
-					var secnum = 0;
+					var secnum = 1;
 					var i;
+					var n;
 					
 					for(i = 1; i < 19; i++)
 					{
 						if(daysToBD(bds[i])  < daysToBD(bds[minnum]))
 						{
-							
-							secnum = minnum;
 							minnum = i;
 						}
-						else if(daysToBD(bds[i])  < daysToBD(bds[secnum]))
+					}
+					
+					
+					for(n = 1; n < 19; n++)
+					{
+						if(daysToBD(bds[n])  < daysToBD(bds[secnum]) && n != minnum)
 						{
-							secnum = i;
+							secnum = n;
 						}
-						
 					}
 					
 					var nextage = age(bds[minnum]) + 1;
