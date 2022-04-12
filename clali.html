@@ -1,0 +1,346 @@
+<!DOCTYPE html/>
+<html lang = "he">
+<meta charset="utf-8">
+		<head>
+			<title>
+				 החברה של יד גיורא 
+			</title>
+			<link rel = "shortcut icon" type = "image/x-icon"  href = "photos/tomshead.png"/>
+			<link rel = "stylesheet" href = "style.css" type = "text/css"/>
+		</head>
+		
+		<body>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<ul style = "color:black;" class = "list" >
+					<li> <a href = "index.html" >דף הבית</a> </li>
+					<li> <a href = "clali.html" style = "color: #f1f1f1" >ידע כללי</a> </li>
+					<li> <a href = "aviel.html" >אביאל קונטנטה</a> </li>
+					<li> <a href = "avishai.html" >אבישי דסטה </a></li>
+					<li> <a href = "ord.html" >אור דהרי </a></li>
+					<li> <a href = "ors.html">אור סלבטקו </a></li>
+					<li> <a href = "oren.html" >אורן סביץ </a></li>
+					<li> <a href = "itamar.html" >איתמר בלאו</a> </li>
+					<li> <a href = "gabi.html" >גבי גרשברג</a> </li>
+					<li> <a href = "gidi.html" >גידי זיו</a> </li>
+					<li> <a href = "david.html" >דויד צוקרמן</a> </li>
+					<li> <a href = "dolev.html" >דולב יפרח </a> </li>
+					<li> <a href = "dor.html" >דור פרחי</a> </li>
+					<li> <a href = "daniel.html" >דניאל שגיב</a> </li>
+					<li> <a href = "yuval.html" >יובל בורוכוב</a> </li>
+					<li> <a href = "stav.html" >סתיו זרד</a></li>
+					<li> <a href = "oded.html" >עודד שאוליאן</a></li>
+					<li> <a href = "sagi.html" >שגיא עברוני</a> </li>
+					<li> <a href = "shachar.html" >שחר וילנסקי </a></li>
+					<li> <a href = "shir.html" >שיר אמזלג </a></li>
+					<li> <a href = "tom.html" >תום גילון</a> </li>
+					
+				</ul>
+		</div>
+		<div id="main" style = "background-color: #c2c2a3; transition: 0.5s;">
+		
+			<div id =  "tafrit" onclick="openNav()" > 
+				<img src = "photos/navsign.png"  id =  "tafritphoto"  style = "width: 40%;"/> <br> תפריט
+			</div>
+		
+			<div id = "head">
+				<h1 class = "headline" > <a href = "index.html" style="color:white;" >החברה של יד גיורא</a></h1>
+			</div>
+			
+			<div id = "mainbody">
+				
+				<h2> מידע כללי</h2>
+				
+				<div class = "line" style = "margin-right: 8%;">
+					<h3> ימי הולדת הבאים</h3>
+					<p id = "nextname" style = "line-height: 120%;">הוא הבא שחוגג בעוד</p>
+					<img id = "nextbd" style = "max-height: 25%; max-width:90%;">
+					<p id = "secname"> ומיד אחרי חוגג</p>
+					<img id = "secbd" style = "max-height: 25%; max-width:90%;">
+				</div>
+				
+				<div class = "line" style = "line-height: 100%;">
+					<h3> כמה זמן אנחנו חיים?</h3>
+					<p> בשנים</p>
+					<p id = "years"> בשנים</p>
+					<p>בחודשים</p>
+					<p id = "months">בחודשים</p>
+					<p> בימים</p>
+					<p id = "days"> בימים</p>
+					<p> בשעות</p>
+					<p id = "hours"> בשעות</p>
+					<p> בדקות</p>
+					<p id = "minutes"> בדקות</p>
+					<p> בשניות</p>
+					<p id = "seconds"> בשניות</p>
+				</div>
+				
+				<div class = "line">
+					<h3> הכי גדול וקטן בחברה</h3>
+					<p>עודד הכי גדול בחברה</p>
+					<p id = howoldoded> עודד</p>
+					<img src = "photos/odedhead.png" style = "max-height: 25%; max-width:90%;">
+					<p> סלבטקו הכי קטן בחברה</p>
+					<p id = howoldors> אור</p>
+					<img src = "photos/orshead.png" style = "max-height: 25%; max-width:90%;">
+				</div>
+				
+				<div class = "line">
+					<h3>נזכור ולא נשכח</h3>
+					<p>אלו שכבר לא איתנו</p>
+					<p> רוי מנסנס</p>
+					<img src = "photos/royhead.png" style = "max-height: 25%; max-width:90%;">
+					<p> תומר יפת</p>
+					<img src = "photos/tomerhead.png" style = "max-height: 25%; max-width:90%;">
+				</div>
+				
+				
+				
+			</div>
+			
+			<script>
+				var davidBD = new Date(1999,3,21);
+				var danielBD = new Date(1998,11,26);
+				var avishaiBD = new Date(1999,5,30);
+				var avielBD = new Date(1998,10,7);
+				var yuvalBD = new Date(1999,1,15);
+				var tomBD = new Date(1999,6,21);
+				var stavBD = new Date(1998,9,5);
+				var shirBD = new Date(1999,4,12);
+				var shacharBD = new Date(1999,10,14);
+				var sagiBD = new Date(1999,1,25);
+				var orsBD = new Date(1999,10,18);
+				var orenBD = new Date(1999,1,6);
+				var ordBD = new Date(1999,6,27);
+				var odedBD = new Date(1998,8,1);
+				var itamarBD = new Date(1999,10,3);
+				var gidiBD = new Date(1999,4,14); 
+				var gabiBD = new Date(1999,0,31);
+				var dorBD = new Date(1998,9,29);
+				var dolevBD = new Date(1999,0,16);
+				var bds = [davidBD , danielBD , avishaiBD , avielBD , yuvalBD , tomBD , stavBD , shirBD , shacharBD , sagiBD , orsBD , ordBD , orenBD , odedBD , itamarBD , gidiBD , gabiBD , dorBD , dolevBD];
+				var names = ["דויד" ,"דניאל","אבישי","אביאל","בורוכוב","תום","סתיו","שיר","וילנסקי","שגיא","סלבטקו","אור דהרי","אורן","עודד","בלאו","גידי","גבי","פרחי","דולב"];
+				var heads = ["photos/davidhead.png" , "photos/danelhead.png" , "photos/avishaihead.png" , "photos/avielhead.png" , "photos/yuvalhead.png" , "photos/tomhead.png" , "photos/stavhead.png" , "photos/shirhead.png" , "photos/shacharhead.png" , "photos/sagihead.png" , "photos/orshead.png" , "photos/ordhead.png" , "photos/orenhead.png" , "photos/odedhead.png" , "photos/itamarhead.png" , "photos/gidihead.png" , "photos/gabihead.png" , "photos/dorhead.png" , "photos/dolevhead.png"];
+
+				
+				nextbirthday(bds , names , heads);
+				document.getElementById("howoldoded").innerHTML = howold(odedBD);
+				document.getElementById("howoldors").innerHTML = howold(orsBD);
+				timealive(bds);
+				
+				<!-- works-->
+				function timealive(bds)
+				{
+					var days = 0;
+					var i;
+					for(i = 0; i < 19; i++)
+					{
+						days += daysalive(bds[i]);
+						
+					}
+					var seconds = (days * 86400);
+					var minutes = (days * 1440);
+					var hours = (days * 24);
+					var years = Math.round(days / 365);
+					var months = Math.round(days / 30.4368499);
+					var now = new Date();
+					var secondstoday = ((now.getHours() * 3600) + (now.getMinutes() * 60) + now.getSeconds() ); 
+					
+					seconds += secondstoday * 19;
+					document.getElementById("seconds").innerHTML = seconds;
+					setInterval(function() {seconds += 1; document.getElementById("seconds").innerHTML = seconds;}, 52);
+					
+					minutes += Math.round(secondstoday / 60 * 19);
+					document.getElementById("minutes").innerHTML = minutes;
+					setInterval(function() {minutes += 1; document.getElementById("minutes").innerHTML = minutes;}, 3157);
+					
+					hours += Math.round(secondstoday / 3600 * 19);
+					document.getElementById("hours").innerHTML = hours;
+					setInterval(function() {hours += 1; document.getElementById("hours").innerHTML = hours;}, 189473);
+					
+					days += Math.round(secondstoday / 86400 * 19);
+					document.getElementById("days").innerHTML = days;
+					setInterval(function() {days += 1; document.getElementById("days").innerHTML = days;}, 4547368);
+					
+					months += Math.round(secondstoday / 22592000 * 19);
+					document.getElementById("months").innerHTML = months;
+					setInterval(function() {months += 1; document.getElementById("months").innerHTML = months;}, 136421052);
+					
+					years += Math.round(secondstoday / 31104000 * 19);
+					document.getElementById("years").innerHTML = years;
+					setInterval(function() {years += 1; document.getElementById("years").innerHTML = years;}, 1637052631);
+				
+				}
+				
+				
+				<!-- works-->
+				function nextbirthday(bds , names , heads)
+				{
+					
+					var minnum = 0;
+					var secnum = 0;
+					var i;
+					
+					for(i = 1; i < 19; i++)
+					{
+						if(daysToBD(bds[i])  < daysToBD(bds[minnum]))
+						{
+							
+							secnum = minnum;
+							minnum = i;
+						}
+						else if(daysToBD(bds[i])  < daysToBD(bds[secnum]))
+						{
+							secnum = i;
+						}
+						
+					}
+					
+					var nextage = age(bds[minnum]) + 1;
+					var secage = age(bds[secnum]) + 1;
+					
+					if(daysToBD(bds[minnum]) == 0)
+					{
+						nextage--;
+						document.getElementById("nextname").innerHTML = names[minnum] + " חוגג היום " + nextage +  "!!!  <br>  מזל טוב אלוף ";
+					}
+					else if(daysToBD(bds[minnum]) == 1)
+					{
+						document.getElementById("nextname").innerHTML = names[minnum] + " חוגג מחר " + nextage + " !!";
+					}
+					else
+					{
+						document.getElementById("nextname").innerHTML = names[minnum] + " חוגג " + nextage + " בעוד " + daysToBD(bds[minnum]) + " ימים";
+					}
+					document.getElementById("nextbd").src = heads[minnum];
+					
+					if(daysToBD(bds[secnum]) == 1)
+					{
+						document.getElementById("secname").innerHTML = names[secnum] + " חוגג מחר " + secage + " !!";
+					}
+					else
+					{
+						document.getElementById("secname").innerHTML = names[secnum] + " חוגג " + secage + " בעוד " + daysToBD(bds[secnum]) + " ימים";
+					}
+					document.getElementById("secbd").src = heads[secnum];
+				}
+				
+				<!-- works-->
+				function age(birthday)
+				{
+					var age = 0;
+					var bday = new Date(birthday.getFullYear() , birthday.getMonth() , birthday.getDate());
+					var now = new Date();
+					while (bday.getDate() != now.getDate() || bday.getFullYear() != now.getFullYear()|| bday.getMonth() != now.getMonth())
+					{
+						bday.setDate(bday.getDate()+1);
+						if(bday.getDate() == birthday.getDate() && bday.getMonth() == birthday.getMonth())
+						{
+							age++;
+						}
+					}
+					return age;
+				}
+				
+				<!-- works-->
+				function howold(birthday)
+				{
+					var now = new Date();
+					var bday = new Date(birthday.getFullYear() , birthday.getMonth() , birthday.getDate());
+					var age = 0;
+					var remain = 0;
+					while(bday.getDate() != now.getDate() || bday.getFullYear() != now.getFullYear()|| bday.getMonth() != now.getMonth())
+					{
+						bday.setDate(bday.getDate()+1);
+						if(bday.getDate() == birthday.getDate() && bday.getMonth() == birthday.getMonth())
+						{
+							remain = 0; 
+							age++;
+						}
+						else
+						{
+							remain++;
+						}
+					}
+					if(remain == 365 || remain == 0)
+					{
+						age++;
+						return "בן " + age + " היום.";
+					}
+					else
+					{
+						return  "בן " + age + " שנים ו " + remain + " ימים.";
+					}
+				}
+				
+				
+				
+				<!-- works-->
+				function daysalive(birthday)
+				{
+					var now = new Date();
+					var bday = new Date(birthday.getFullYear() , birthday.getMonth() , birthday.getDate());
+					var days = 0;
+					while(bday.getDate() != now.getDate() || bday.getFullYear() != now.getFullYear()|| bday.getMonth() != now.getMonth())
+					{
+						bday.setDate(bday.getDate()+1);
+						days += 1;
+					}
+					return days;
+				}
+				
+				
+				<!--works-->
+				function daysToBD(birthday)
+				{
+					var now = new Date();
+					var days = 0;
+					while(birthday.getDate() != now.getDate() || birthday.getMonth() != now.getMonth())
+					{
+						days++;
+						now.setDate(now.getDate()+1);
+					}
+					return days;
+				}
+				
+					
+				<!-- tafrit-->
+				var kaftor = document.getElementById('tafrit');
+				/* Set the width of the side navigation to 20%*/
+				function openNav() 
+				{
+					document.getElementById("mySidenav").style.width = "20%";
+					document.getElementById("main").style.marginRight = "20%";
+					document.getElementById("main").style.background= "rgba(black, 0.5)";
+					kaftor.setAttribute('onclick', 'closeNav()');
+				}
+
+				/* Set the width of the side navigation to 0 */
+				function closeNav() 
+				{	
+					document.getElementById("mySidenav").style.width = "0";
+					document.getElementById("main").style.marginRight = "0px";
+					document.getElementById("main").style.background = "#c2c2a3";	
+					kaftor.setAttribute('onclick', 'openNav()');		
+				}
+			</script>
+			
+			<style>
+				.line
+				{
+					font-weight: bold;
+					width: 19%;
+					height: 80%;
+					border: 2px solid black;
+					margin: 1%;
+					float:right;
+					text-align: center;
+					overflow: auto;
+					
+				}
+				
+			</style>
+			
+		</div>
+		</body>
+</html>

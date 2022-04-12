@@ -1,28 +1,23 @@
-<html>
+<!DOCTYPE html/>
+<html lang = "he">
+<meta charset="utf-8">
 		<head>
 			<title>
 				 החברה של יד גיורא 
 			</title>
-			<link rel = "shortcut icon" type = "image/x-icon"  href = "photos/Adobe_20200417_011911.png"/>
-			<link rel = "stylesheet" href = "css/style.css" type = "text/css"/>
+			<link rel = "shortcut icon" type = "image/x-icon"  href = "photos/tomshead.png"/>
+			<link rel = "stylesheet" href = "style.css" type = "text/css"/>
 		</head>
 		
 		<body>
-			<div id = "head">
-				<h1 class = "headline" ><a href = "index.html" style="color:white;" >החברה של יד גיורא</a></h1>
-			</div>
-			
-			<div id = "main">
-				
-			</div>
-			
-			<div id = "menu" style="color:black;">
-			
-				<ul style = "color:black;" class = "list" >
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<ul style = "color:black;" class = "list" >
 					<li> <a href = "index.html" >דף הבית</a> </li>
+					<li> <a href = "clali.html" >ידע כללי</a> </li>
 					<li> <a href = "aviel.html" >אביאל קונטנטה</a> </li>
 					<li> <a href = "avishai.html" >אבישי דסטה </a></li>
-					<li> <a href = "ord.html" >אור דהרי </a></li>
+					<li> <a href = "ord.html" style = "color: #f1f1f1">אור דהרי </a></li>
 					<li> <a href = "ors.html">אור סלבטקו </a></li>
 					<li> <a href = "oren.html" >אורן סביץ </a></li>
 					<li> <a href = "itamar.html" >איתמר בלאו</a> </li>
@@ -41,6 +36,133 @@
 					<li> <a href = "tom.html" >תום גילון</a> </li>
 					
 				</ul>
+		</div>
+		<div id="main" style = "background-color: #c2c2a3; transition: 0.5s;">
+		
+			<div id =  "tafrit" onclick="openNav()" > 
+				<img src = "photos/navsign.png"  id =  "tafritphoto"  style = "width: 40%;"/> <br> תפריט
 			</div>
+		
+			<div id = "head">
+				<h1 class = "headline" > <a href = "index.html" style="color:white;" >החברה של יד גיורא</a></h1>
+			</div>
+			
+			<div id = "mainbody">
+				
+				<div class = "personalpicdiv">
+					<img class="personalpic" id = "orpic" src = "photos/ordphotos.jpg">
+				</div>
+				
+				<h2>אור <span onclick="katzin()"> "הקצין"</span> דהרי</h2>
+				
+				<div class = "sub">
+					<p id = "birthday"> תאריך לידה:</p>
+				</div>
+				
+				<div class = "sub">
+					<p id = "age"> גיל:</p>
+				</div>
+				
+				<div class = "sub">
+					<p id = "Alive"> ימים בחיים:</p>
+				</div>
+				
+				<div class = "sub">
+					<p id = "daysto"> ימים ליום הולדת:</p>
+				</div>
+				
+				<div class = "sub">
+					<p> הורים: אורלי וינאי </p>
+				</div>
+				
+				<div class = "sub">
+					<p onclick = "burger()"> "שגיא בוא לאכול המבורגר"</p>
+				</div>
+				
+			</div>
+			
+			<script>
+			<!-- להחליף תאריך (לשים לב לחודש)-->
+			var birthday = new Date(1999,6,27);
+			document.getElementById("birthday").innerHTML = "תאריך לידה: " +  birthday.getFullYear() + " / " + (birthday.getMonth() + 1) + " / " + birthday.getDate();
+			daysalive(birthday);
+			daysToBD(birthday);
+			
+			setInterval(function(){ document.getElementById("orpic").src = "photos/ornerd.jpg"; setTimeout(function(){ document.getElementById("orpic").src = "photos/ordphotos.jpg"; }, 500); }, 12000);
+			
+			function burger()
+			{
+				document.getElementById("mainbody").style.background = "url('photos/burger.png') no-repeat center center "; 
+				document.getElementById("mainbody").style.backgroundSize = "300px ";	
+			}
+			
+				function katzin()
+				{
+					document.getElementById("orpic").src = "photos/ordargot.jpg";
+				}
+				
+				function daysalive(birthday)
+				{
+					var now = new Date();
+					var bday = new Date(birthday.getFullYear() , birthday.getMonth() , birthday.getDate());
+					var days = 0;
+					var age = 0;
+					while(bday.getDate() != now.getDate() || bday.getFullYear() != now.getFullYear()|| bday.getMonth() != now.getMonth())
+					{
+						bday.setDate(bday.getDate()+1);
+						days += 1;
+						if(bday.getDate() == birthday.getDate() && bday.getMonth() == birthday.getMonth()){ age++;}
+						
+					}
+					document.getElementById("Alive").innerHTML = "ימים בחיים: " + days ;
+					document.getElementById("age").innerHTML = "גיל: " + age ;
+					
+				}
+				
+			function daysToBD(birthday)
+			{
+				var now = new Date();
+				var days = 0;
+				while(birthday.getDate() != now.getDate() || birthday.getMonth() != now.getMonth())
+					{
+						days++;
+						now.setDate(now.getDate()+1);
+					}
+				if(days == 0)
+				{
+					document.getElementById("daysto").innerHTML = "מזל טוב מלך!!";
+				}
+				else
+				{
+					document.getElementById("daysto").innerHTML = "עוד " + days + " ימים ליום הולדת";
+				}
+			}
+				
+				var kaftor = document.getElementById('tafrit');
+				
+				/* Set the width of the side navigation to 20%*/
+				function openNav() 
+				{
+					document.getElementById("mySidenav").style.width = "20%";
+					document.getElementById("main").style.marginRight = "20%";
+					document.getElementById("main").style.background= "rgba(black, 0.5)";
+					kaftor.setAttribute('onclick', 'closeNav()');
+					
+				}
+
+				/* Set the width of the side navigation to 0 */
+				function closeNav() 
+				{	
+					document.getElementById("mySidenav").style.width = "0";
+					document.getElementById("main").style.marginRight = "0px";
+					document.getElementById("main").style.background = "#c2c2a3";	
+					kaftor.setAttribute('onclick', 'openNav()');
+					
+				}
+			</script>
+			
+			
+			
+		</div>
 		</body>
 </html>
